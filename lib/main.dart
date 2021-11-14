@@ -5,11 +5,11 @@ import 'package:flutter_application_1/pages/login.dart';
 import 'package:flutter_application_1/utils/Routes.dart';
 
 void main() {
-  runApp(app());
+  runApp(const App());
 }
 
-class app extends StatelessWidget {
-  const app({Key? key}) : super(key: key);
+class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

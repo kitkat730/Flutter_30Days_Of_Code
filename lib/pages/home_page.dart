@@ -5,14 +5,12 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.blue,
       appBar: AppBar(
-        title: Text("Heading"),
+        title: const Text("Heading"),
       ),
-      body: Center(
-        child: Container(
-          child: Text("Welcome to Day 2"),
-        ),
+      body: const Center(
+        child: Text("Welcome to Day 2"),
       ),
-      drawer: Drawer(),
+      drawer: const Drawer(),
     );
   }
 }
