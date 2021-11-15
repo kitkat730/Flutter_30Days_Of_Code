@@ -21,9 +21,10 @@ class App extends StatelessWidget {
         // fontFamily: GoogleFonts.lato().fontFamily
         //textTheme : GoogleFonts.latoTextTheme()
       ),
+      debugShowCheckedModeBanner: false,
       darkTheme: ThemeData(brightness: Brightness.dark),
       routes: {
-        "/": (context) => LoginPage(),
+        "/": (context) => HomePage(),
         MyRoutes.HomeRoute: (context) => HomePage(),
         MyRoutes.logInRoute: (context) => LoginPage()
       },
