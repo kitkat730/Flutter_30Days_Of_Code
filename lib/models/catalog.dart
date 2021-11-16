@@ -11,16 +11,13 @@ class CatalogModel
   ];
 }
 
-
-
-
 class Item {
-  final num id = 0;
-  final String name = '';
-  final String desc = '';
-  final num price = 0;
-  final String color = "#ffffff";
-  final String imageUrl = "";
+  final num id;
+  final String name;
+  final String desc;
+  final num price;
+  final String color;
+  final String imageUrl;
 
-  Item({this.id,this.name,this.desc,this.price,this.color,this.imageUrl});
+  Item({this.id = -1, this.name = '', this.desc = '',  this.price = -1, this.color = '', this.imageUrl = ''});
 }
