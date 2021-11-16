@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/models/catalog.dart';
+import 'package:flutter_application_1/widgets/Item_Widget.dart';
 import 'package:flutter_application_1/widgets/drawer.dart';
 
 class HomePage extends StatelessWidget {
@@ -12,9 +14,12 @@ class HomePage extends StatelessWidget {
         //iconTheme: IconThemeData(color: Colors.black),
         //elevation: 0.0,
       ),
-      body: const Center(
-        child: Text("Welcome to Day 2"),
-      ),
+      body: ListView.builder(
+             itemCount: CatalogModel.items.length,
+             itemBuilder: (context, index){
+               return ItemWidget(item: CatalogModel.items[index]);
+             },
+          ),
       drawer: MyDrawer(),
     );
   }
