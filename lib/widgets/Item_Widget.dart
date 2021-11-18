@@ -15,7 +15,7 @@ class ItemWidget extends StatelessWidget {
       //color: Colors.deepOrange,
       //borderOnForeground: true,
       child: ListTile(
-        leading: Image.network(item.imageUrl),
+        leading: Image.network(item.image),
         title: Text(item.name),
         subtitle: Text(item.desc),
         trailing: Text("\$${item.price}",
